@@ -1,8 +1,8 @@
-resource "aws_s3_bucket" "example" {
-  bucket = "madhu-devops123"
+resource "aws_instance" "web1" {
+  ami           = "ami-0c7217cdde317cfec"
+  instance_type = "t2.micro"
 
   tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
+    Name = "TERRA"
   }
 }
